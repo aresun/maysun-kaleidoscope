@@ -1,0 +1,15 @@
+.inline-block {
+  display: inline-block;
+}
+
+.App {
+  min-width: 1024px;
+
+  font-family: "Adobe Garamond Pro", Optima, monospace;
+}
+
+.ellipses {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

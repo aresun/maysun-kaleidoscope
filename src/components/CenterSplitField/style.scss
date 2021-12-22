@@ -1,0 +1,55 @@
+$name-font-size: 20px;
+
+.light-beam {
+  font-size: $name-font-size;
+  cursor: pointer;
+
+  & + .light-beam {
+    margin-top: 17px;
+  }
+
+  .left-half,
+  .right-half {
+    width: 50%;
+
+    box-sizing: border-box;
+
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+  }
+
+  .left-half {
+    justify-content: flex-end;
+
+    .label {
+      color: #fff;
+      font-size: $name-font-size;
+
+      border-radius: 6px;
+      padding: 2px 6px;
+
+      background-color: #aa00dd;
+    }
+
+    .radio-dot {
+      margin-left: 15px;
+
+      transform: scale(1.5);
+      cursor: pointer;
+    }
+  }
+
+  .right-half {
+    padding-left: 17px;
+    text-align: left;
+
+    color: #ff00bb;
+
+    .label-value {
+      display: inline-block;
+
+      width: 72%;
+    }
+  }
+}
