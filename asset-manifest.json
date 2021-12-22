@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/name-kaleidoscope/static/css/main.4d9c1635.css",
+    "main.js": "/name-kaleidoscope/static/js/main.759e49e7.js",
+    "static/js/787.6a3b9dbe.chunk.js": "/name-kaleidoscope/static/js/787.6a3b9dbe.chunk.js",
+    "index.html": "/name-kaleidoscope/index.html",
+    "main.4d9c1635.css.map": "/name-kaleidoscope/static/css/main.4d9c1635.css.map",
+    "main.759e49e7.js.map": "/name-kaleidoscope/static/js/main.759e49e7.js.map",
+    "787.6a3b9dbe.chunk.js.map": "/name-kaleidoscope/static/js/787.6a3b9dbe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d9c1635.css",
+    "static/js/main.759e49e7.js"
+  ]
+}
