@@ -1,7 +1,7 @@
 export function filter_reflect_input(str) {
-  let valid_input = str
-    .replace(/[^a-zA-Z _-]/g, ``)
-    .replace(/[ ]+/g, ` `);
+  let valid_input = str.replace(/[^a-zA-Z _-]/g, ``).replace(/[ ]+/g, ` `);
+
+  // todo:: add const variable name
 
   let splited = ``;
   if (/[-]+/g.test(valid_input)) {

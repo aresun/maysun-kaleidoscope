@@ -32,6 +32,8 @@ function cal_fileds_to_display(value_be_reflected) {
   const component = `<${classIdentifier}></${classIdentifier}>`;
   const react_single_component = `<${classIdentifier} />`;
 
+  // todo:: add file extention `.js` `.rs` `.vue`
+
   // $ calculate feilds to be displaied
   const fields = [
     {
