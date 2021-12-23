@@ -9,21 +9,11 @@ import {
 
 function cal_fileds_to_display(value_be_reflected) {
   // $ calculated data
-  const underscoreName = toUnderscoreName(
-    value_be_reflected
-  );
-  const variableName = toVariableName(
-    value_be_reflected
-  );
-  const connected_name = toConnectedName(
-    value_be_reflected
-  );
-  const classIdentifier = toClassIdentifier(
-    value_be_reflected
-  );
-  const const_variable_name = `const ${toConstVariableName(
-    value_be_reflected
-  )} = ;`;
+  const underscoreName = toUnderscoreName(value_be_reflected);
+  const variableName = toVariableName(value_be_reflected);
+  const connected_name = toConnectedName(value_be_reflected);
+  const classIdentifier = toClassIdentifier(value_be_reflected);
+  const const_variable_name = `const ${toConstVariableName(value_be_reflected)} = ;`;
 
   // $ derived data
   /// prefix

@@ -1,9 +1,6 @@
 import React, { useRef, useState } from "react";
 // # utils
-import {
-  filter_reflect_input,
-  trim_blank_space,
-} from "../utils/input_filter";
+import { filter_reflect_input, trim_blank_space } from "../utils/input_filter";
 import { single_debounce } from "../utils/single_decounce";
 import { copy } from "../utils/copy";
 import { cal_fileds_to_display } from "./calculations";
@@ -13,40 +10,27 @@ import "./style.scss";
 import CenterSplitField from "../components/CenterSplitField/CenterSplitField";
 
 function IndexPage() {
-  const [str_be_processed, set_str_be_processed] =
-    useState(``);
-  const [feilds_display, set_fileds_display] = useState(
-    []
-  );
-  const [default_type, set_default_type] =
-    useState(`underscore`);
-  const [
-    is_show_clear_button,
-    set_is_show_clear_button,
-  ] = useState(false);
+  const [str_be_processed, set_str_be_processed] = useState(``);
+  const [feilds_display, set_fileds_display] = useState([]);
+  const [default_type, set_default_type] = useState(`underscore`);
+  const [is_show_clear_button, set_is_show_clear_button] = useState(false);
   const reflect_input = useRef(null);
 
   // • reflect events
   // ------------------------------------------------------------------------------------------
   const handleInputedChange = single_debounce((e) => {
-    const reflect_input_value = filter_reflect_input(
-      e.target.value
-    );
+    const reflect_input_value = filter_reflect_input(e.target.value);
     // $ display value in <input />
     set_str_be_processed(reflect_input_value);
 
-    const fields = cal_fileds_to_display(
-      reflect_input_value
-    );
+    const fields = cal_fileds_to_display(reflect_input_value);
 
     // $ display result data
     set_fileds_display(fields);
 
-    const default_type_value = fields.filter(
-      (field) => {
-        return field.label_name === default_type;
-      }
-    )[0].label_value;
+    const default_type_value = fields.filter((field) => {
+      return field.label_name === default_type;
+    })[0].label_value;
 
     // $ copy data to clipboard
     copy(default_type_value);
@@ -69,20 +53,16 @@ function IndexPage() {
     reflect_input.current.value = ``;
   }
   function handle_the_reflect_blur(e) {
-    const result_value = trim_blank_space(
-      str_be_processed
-    );
+    const result_value = trim_blank_space(str_be_processed);
     set_str_be_processed(result_value);
 
     const fields = cal_fileds_to_display(result_value);
 
     set_fileds_display(fields);
 
-    const default_type_value = fields.filter(
-      (field) => {
-        return field.label_name === default_type;
-      }
-    )[0].label_value;
+    const default_type_value = fields.filter((field) => {
+      return field.label_name === default_type;
+    })[0].label_value;
 
     copy(default_type_value);
 
@@ -100,10 +80,7 @@ function IndexPage() {
       <div className="input-area">
         <span className="inline-block input-section">
           <div className="left-half">
-            <span
-              className="copy-button"
-              onClick={handle_copy_reflect}
-            >
+            <span className="copy-button" onClick={handle_copy_reflect}>
               copyit
             </span>
             <span className="tip">Maysun Reflect:</span>
