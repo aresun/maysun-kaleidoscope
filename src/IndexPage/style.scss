@@ -41,7 +41,7 @@ $clear-button-size-right: 10px;
         .copy-button {
           border: 1px solid purple;
           border-radius: 6px;
-          color: #dd66ff;
+          color: #ff0066;
 
           cursor: pointer;
 
@@ -58,6 +58,11 @@ $clear-button-size-right: 10px;
           &:hover {
             background-color: purple;
           }
+
+          & span {
+            position: relative;
+            top: 3px;
+          }
         }
 
         .tip {
@@ -70,7 +75,6 @@ $clear-button-size-right: 10px;
       .right-half {
         text-align: left;
         padding-left: 17px;
-        justify-content: start;
 
         .input-container {
           position: relative;
@@ -87,6 +91,7 @@ $clear-button-size-right: 10px;
             padding-bottom: 3px;
 
             outline: none;
+            color: #ff0088;
           }
 
           .clear-btn {
@@ -103,6 +108,31 @@ $clear-button-size-right: 10px;
             transform: translateY(-50%);
           }
         }
+
+        .select-all-button {
+          // border: 1px solid purple;
+          border-radius: 6px;
+          color: #ff0066;
+
+          cursor: pointer;
+
+          padding: 6px 6px;
+
+          font-size: 24px;
+
+          transition: 200ms all ease;
+
+          vertical-align: middle;
+
+          &:hover {
+            background-color: #252525;
+          }
+
+          & span {
+            position: relative;
+            top: 3px;
+          }
+        }
       }
     }
   }
@@ -113,5 +143,6 @@ $clear-button-size-right: 10px;
     text-align: center;
     margin: 0 auto;
     margin-top: 27px;
+    padding-bottom: 57px;
   }
 }

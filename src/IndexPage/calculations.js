@@ -1,62 +1,62 @@
 // # utils
 import {
-  toUnderscoreName,
-  toVariableName,
-  toConnectedName,
-  toClassIdentifier,
-  toConstVariableName,
+  to_underscore_name,
+  to_variable_name,
+  to_connected_name,
+  to_class_identifier,
+  to_const_variable_name,
 } from "../utils/transform";
 
 export function cal_fileds_to_display(value_be_reflected) {
   // $ calculated data
-  const underscoreName = toUnderscoreName(value_be_reflected);
-  const variableName = toVariableName(value_be_reflected);
-  const connected_name = toConnectedName(value_be_reflected);
-  const classIdentifier = toClassIdentifier(value_be_reflected);
-  const const_variable_name = `const ${toConstVariableName(value_be_reflected)} = ;`;
+  const underscore_name = to_underscore_name(value_be_reflected);
+  const variable_name = to_variable_name(value_be_reflected);
+  const connected_name = to_connected_name(value_be_reflected);
+  const class_identifier = to_class_identifier(value_be_reflected);
+  const const_variable_name = `const ${to_const_variable_name(value_be_reflected)} = ;`;
 
   // $ derived data
   /// prefix
   /// prefix: status
-  const with_prefix_is = `is${classIdentifier}`;
+  const with_prefix_is = `is${class_identifier}`;
   /// prefix: get data
-  const with_prefix_request = `request${classIdentifier}`;
+  const with_prefix_request = `request${class_identifier}`;
   /// prefix: logic entry
-  const with_prefix_entrance = `entrance${classIdentifier}`;
-  const with_prefix_prepare = `prepare${classIdentifier}`;
+  const with_prefix_entrance = `entrance${class_identifier}`;
+  const with_prefix_prepare = `prepare${class_identifier}`;
   /// prefix: generate data
-  const with_prefix_generate = `generate${classIdentifier}`;
-  const with_prefix_assemble = `assemble${classIdentifier}`;
-  const with_prefix_translate = `translate${classIdentifier}`;
+  const with_prefix_generate = `generate${class_identifier}`;
+  const with_prefix_assemble = `assemble${class_identifier}`;
+  const with_prefix_translate = `translate${class_identifier}`;
   /// prefix: data records
-  const with_prefix_set = `set${classIdentifier}`;
-  const with_prefix_reset = `reset${classIdentifier}`;
-  const with_prefix_handle = `handle${classIdentifier}`;
+  const with_prefix_set = `set${class_identifier}`;
+  const with_prefix_reset = `reset${class_identifier}`;
+  const with_prefix_handle = `handle${class_identifier}`;
 
   /// html related
   const vue_component = `<${connected_name}></${connected_name}>`;
   const vue_single_component = `<${connected_name} />`;
-  const component = `<${classIdentifier}></${classIdentifier}>`;
-  const react_single_component = `<${classIdentifier} />`;
+  const component = `<${class_identifier}></${class_identifier}>`;
+  const react_single_component = `<${class_identifier} />`;
 
   /// file name
-  const rust_file_name = `${underscoreName}.rs`;
+  const rust_file_name = `${underscore_name}.rs`;
 
-  const js_file_name = `${variableName}.js`;
-  const css_file_name = `${variableName}.css`;
-  const scss_file_name = `${variableName}.scss`;
-  const vue_file_name = `${variableName}.vue`;
+  const js_file_name = `${variable_name}.js`;
+  const css_file_name = `${variable_name}.css`;
+  const scss_file_name = `${variable_name}.scss`;
+  const vue_file_name = `${variable_name}.vue`;
 
   // $ calculate feilds to be displaied
   const fields = [
     {
       label_name: `underscore`,
-      label_value: underscoreName,
+      label_value: underscore_name,
       type: `source`,
     },
     {
       label_name: `variable`,
-      label_value: variableName,
+      label_value: variable_name,
       type: `source`,
     },
     {
@@ -66,7 +66,7 @@ export function cal_fileds_to_display(value_be_reflected) {
     },
     {
       label_name: `class identifier`,
-      label_value: classIdentifier,
+      label_value: class_identifier,
       type: `source`,
     },
     {
