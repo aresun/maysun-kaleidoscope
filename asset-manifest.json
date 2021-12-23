@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/name-kaleidoscope/static/css/main.50fb9492.css",
-    "main.js": "/name-kaleidoscope/static/js/main.4761ce4a.js",
-    "static/js/787.6a3b9dbe.chunk.js": "/name-kaleidoscope/static/js/787.6a3b9dbe.chunk.js",
-    "index.html": "/name-kaleidoscope/index.html",
-    "main.50fb9492.css.map": "/name-kaleidoscope/static/css/main.50fb9492.css.map",
-    "main.4761ce4a.js.map": "/name-kaleidoscope/static/js/main.4761ce4a.js.map",
-    "787.6a3b9dbe.chunk.js.map": "/name-kaleidoscope/static/js/787.6a3b9dbe.chunk.js.map"
+    "main.css": "/maysun-kaleidoscope/static/css/main.50fb9492.css",
+    "main.js": "/maysun-kaleidoscope/static/js/main.b68e7924.js",
+    "static/js/787.6a3b9dbe.chunk.js": "/maysun-kaleidoscope/static/js/787.6a3b9dbe.chunk.js",
+    "index.html": "/maysun-kaleidoscope/index.html",
+    "main.50fb9492.css.map": "/maysun-kaleidoscope/static/css/main.50fb9492.css.map",
+    "main.b68e7924.js.map": "/maysun-kaleidoscope/static/js/main.b68e7924.js.map",
+    "787.6a3b9dbe.chunk.js.map": "/maysun-kaleidoscope/static/js/787.6a3b9dbe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.50fb9492.css",
-    "static/js/main.4761ce4a.js"
+    "static/js/main.b68e7924.js"
   ]
 }
