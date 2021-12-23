@@ -18,7 +18,6 @@ function IndexPage() {
   const [is_show_clear_button, set_is_show_clear_button] = useState(false);
 
   const ref_reflect_input = useRef(null);
-  const reflect_input_dom = get_dom(ref_reflect_input);
 
   // • reflect events
   // ------------------------------------------------------------------------------------------
@@ -39,7 +38,7 @@ function IndexPage() {
     copy(default_type_value);
 
     // $ update value of dom
-    reflect_input_dom.value = value_of_reflect_input;
+    get_dom(ref_reflect_input).value = value_of_reflect_input;
   }, 300);
 
   function handle_mouse_entered(e) {
@@ -52,8 +51,8 @@ function IndexPage() {
   }
   function handle_clicked_clear(e) {
     set_str_splited_by_blank(``);
-    reflect_input_dom.focus();
-    reflect_input_dom.value = ``;
+    get_dom(ref_reflect_input).focus();
+    get_dom(ref_reflect_input).value = ``;
     set_fields_showed([]);
   }
   function handle_the_input_blured(e) {
@@ -70,13 +69,13 @@ function IndexPage() {
 
     copy(default_type_value);
 
-    reflect_input_dom.value = result_value;
+    get_dom(ref_reflect_input).value = result_value;
   }
   function handle_copy_reflect(e) {
     copy(str_splited_by_blank);
   }
   function handle_select_all(e) {
-    reflect_input_dom.select();
+    get_dom(ref_reflect_input).select();
   }
   function when_clicked_radio(type_str) {
     set_default_type(type_str || `underscore`);
