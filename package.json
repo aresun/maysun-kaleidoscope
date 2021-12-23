@@ -22,7 +22,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://aresun.github.io/name-kaleidoscope",
+  "homepage": "https://aresun.github.io/maysun-kaleidoscope",
   "eslintConfig": {
     "extends": [
       "react-app",
