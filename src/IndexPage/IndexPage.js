@@ -11,6 +11,7 @@ import "./style.scss";
 import CenterSplitField from "../components/CenterSplitField/CenterSplitField";
 
 function IndexPage() {
+  // $ set state
   const [str_be_processed, set_str_be_processed] = useState(``);
   const [feilds_display, set_fileds_display] = useState([]);
   const [default_type, set_default_type] = useState(`underscore`);

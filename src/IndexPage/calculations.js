@@ -17,13 +17,18 @@ function cal_fileds_to_display(value_be_reflected) {
 
   // $ derived data
   /// prefix
+  /// prefix: status
   const with_prefix_is = `is_${underscoreName}`;
+  /// prefix: get data
   const with_prefix_request = `request_${underscoreName}`;
+  /// prefix: logic entry
   const with_prefix_entrance = `entrance_${underscoreName}`;
   const with_prefix_prepare = `prepare_${underscoreName}`;
+  /// prefix: generate data
   const with_prefix_generate = `generate_${underscoreName}`;
   const with_prefix_assemble = `assemble_${underscoreName}`;
   const with_prefix_translate = `translate_${underscoreName}`;
+  /// prefix: data records
   const with_prefix_set = `set_${underscoreName}`;
   const with_prefix_reset = `reset_${underscoreName}`;
   /// html related
@@ -33,6 +38,7 @@ function cal_fileds_to_display(value_be_reflected) {
   const react_single_component = `<${classIdentifier} />`;
 
   // todo:: add file extention `.js` `.rs` `.vue`
+  // todo:: add `handle`
 
   // $ calculate feilds to be displaied
   const fields = [
