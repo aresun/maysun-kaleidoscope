@@ -2,10 +2,14 @@ $clear-button-size: 20px;
 $clear-button-size-right: 10px;
 
 .container {
+  box-sizing: border-box;
+
   position: absolute;
   left: 50%;
-  top: 10%;
+  padding-top: 100px;
   transform: translate(-50%, 0%);
+
+  height: 100%;
 
   min-width: 1024px;
 
@@ -58,6 +62,8 @@ $clear-button-size-right: 10px;
 
         .tip {
           color: #c300bd;
+
+          margin-right: 2px;
         }
       }
 
@@ -76,10 +82,11 @@ $clear-button-size-right: 10px;
             width: 360px;
 
             padding-left: $clear-button-size-right;
-            padding-right: $clear-button-size +
-              $clear-button-size-right * 2;
+            padding-right: $clear-button-size + $clear-button-size-right * 2;
             padding-top: 3px;
             padding-bottom: 3px;
+
+            outline: none;
           }
 
           .clear-btn {
@@ -101,8 +108,10 @@ $clear-button-size-right: 10px;
   }
 
   .kaleidoscope {
+    box-sizing: border-box;
+
     text-align: center;
     margin: 0 auto;
-    padding-top: 27px;
+    margin-top: 27px;
   }
 }

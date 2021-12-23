@@ -5,6 +5,7 @@ import "./style.scss";
 export default function CenterSplitField({
   label_name,
   label_value,
+  type,
   click_fn,
   default_type,
 }) {
@@ -18,13 +19,10 @@ export default function CenterSplitField({
 
   return (
     <>
-      <div
-        className="light-beam"
-        onClick={handle_clicked_component}
-      >
+      <div className="light-beam" onClick={handle_clicked_component}>
         <div className="left-half">
           <span>
-            <span className="label">{label_name}</span>
+            <span className={`label ${type}`}>{label_name}</span>
             <input
               className="radio-dot"
               type="radio"
@@ -35,9 +33,7 @@ export default function CenterSplitField({
           </span>
         </div>
         <div className="right-half">
-          <span className="label-value ellipses">
-            {label_value}
-          </span>
+          <span className="label-value ellipses">{label_value}</span>
         </div>
       </div>
     </>

@@ -29,7 +29,28 @@ $name-font-size: 20px;
       border-radius: 6px;
       padding: 2px 6px;
 
-      background-color: #aa00dd;
+      &.source {
+        background-color: #aa00dd;
+      }
+
+      &.html {
+        background-color: gold;
+      }
+
+      &.file {
+        background-color: #211429;
+      }
+      &.status {
+        background-color: red;
+      }
+
+      &.logics {
+        background-color: #00bb88;
+      }
+
+      &.data {
+        background-color: #ff00bb;
+      }
     }
 
     .radio-dot {
@@ -45,6 +66,7 @@ $name-font-size: 20px;
     text-align: left;
 
     color: #ff00bb;
+    color: #ff0088;
 
     .label-value {
       display: inline-block;

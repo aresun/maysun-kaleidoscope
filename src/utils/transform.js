@@ -13,7 +13,7 @@ const processor_toConnectedName = _.flowRight(
 );
 const processor_toConstVariableName = _.flowRight(
   _.join(`_`),
-  _.map(_.toUper), // todo:: check api name
+  _.map(_.toUpper),
   to_array
 );
 const processor_toClassIdentifier = _.flowRight(
