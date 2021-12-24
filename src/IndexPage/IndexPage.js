@@ -5,6 +5,7 @@ import { single_debounce } from "../utils/single_decounce";
 import { copy } from "../utils/copy";
 import { cal_fileds_to_display } from "./calculations";
 import { get_dom } from "../utils/react_related";
+import { find_then_execute } from "../utils/object_array";
 // # style
 import "./style.scss";
 // # components
@@ -51,23 +52,33 @@ function IndexPage() {
   }
   function handle_clicked_clear(e) {
     set_str_splited_by_blank(``);
-    get_dom(ref_reflect_input).focus();
-    get_dom(ref_reflect_input).value = ``;
+    const reflect_dom = get_dom(ref_reflect_input);
+    reflect_dom.focus();
+    reflect_dom.value = ``;
     set_fields_showed([]);
   }
   function handle_the_input_blured(e) {
     const result_value = trim_blank_space(str_splited_by_blank);
     set_str_splited_by_blank(result_value);
 
-    const fields = cal_fileds_to_display(result_value);
+    if (result_value) {
+      // + value existed
 
-    set_fields_showed(fields);
+      const fields = cal_fileds_to_display(result_value);
+      set_fields_showed(fields);
 
-    const default_type_value = fields.filter((field) => {
-      return field.label_name === default_type;
-    })[0].label_value;
+      // $ record it
+      let default_type_value = ``;
+      find_then_execute(fields, `label_name`, default_type, (field_found) => {
+        default_type_value = field_found.label_value;
+      });
 
-    copy(default_type_value);
+      copy(default_type_value);
+    } else {
+      // + value !existed
+
+      set_fields_showed([]);
+    }
 
     get_dom(ref_reflect_input).value = result_value;
   }

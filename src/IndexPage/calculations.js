@@ -44,18 +44,18 @@ export function cal_fileds_to_display(value_be_reflected) {
     make_field(`vue component`, `<${connected_name}></${connected_name}>`, `html`),
     make_field(`vue single component`, `<${connected_name} />`, `html`),
     /// file name
-    make_field(`.rs`, `${underscore_name}.rs`, `file`),
-    make_field(`.js`, `${underscore_name}.js`, `file`),
-    make_field(`.js`, `${class_identifier}.js`, `file`),
-    make_field(`.js`, `${variable_name}.js`, `file`),
+    make_field(`_.rs`, `${underscore_name}.rs`, `file`),
+    make_field(`_.js`, `${underscore_name}.js`, `file`),
+    make_field(`AA.js`, `${class_identifier}.js`, `file`),
+    make_field(`aA.js`, `${variable_name}.js`, `file`),
 
-    make_field(`.css`, `${underscore_name}.css`, `file`),
-    make_field(`.css`, `${class_identifier}.css`, `file`),
-    make_field(`.css`, `${variable_name}.css`, `file`),
+    make_field(`_.css`, `${underscore_name}.css`, `file`),
+    make_field(`AA.css`, `${class_identifier}.css`, `file`),
+    make_field(`aA.css`, `${variable_name}.css`, `file`),
 
-    make_field(`.scss`, `${underscore_name}.scss`, `file`),
-    make_field(`.scss`, `${class_identifier}.scss`, `file`),
-    make_field(`.scss`, `${variable_name}.scss`, `file`),
+    make_field(`_.scss`, `${underscore_name}.scss`, `file`),
+    make_field(`AA.scss`, `${class_identifier}.scss`, `file`),
+    make_field(`aA.scss`, `${variable_name}.scss`, `file`),
 
     make_field(`.vue`, `${variable_name}.vue`, `file`),
     /// logics
