@@ -46,18 +46,18 @@ export function cal_fileds_to_display(value_be_reflected) {
     /// file name
     make_field(`_.rs`, `${underscore_name}.rs`, `file`),
     make_field(`_.js`, `${underscore_name}.js`, `file`),
-    make_field(`AA.js`, `${class_identifier}.js`, `file`),
-    make_field(`aA.js`, `${variable_name}.js`, `file`),
+    // make_field(`AA.js`, `${class_identifier}.js`, `file`),
+    // make_field(`aA.js`, `${variable_name}.js`, `file`),
 
     make_field(`_.css`, `${underscore_name}.css`, `file`),
-    make_field(`AA.css`, `${class_identifier}.css`, `file`),
-    make_field(`aA.css`, `${variable_name}.css`, `file`),
+    // make_field(`AA.css`, `${class_identifier}.css`, `file`),
+    // make_field(`aA.css`, `${variable_name}.css`, `file`),
 
     make_field(`_.scss`, `${underscore_name}.scss`, `file`),
-    make_field(`AA.scss`, `${class_identifier}.scss`, `file`),
-    make_field(`aA.scss`, `${variable_name}.scss`, `file`),
+    // make_field(`AA.scss`, `${class_identifier}.scss`, `file`),
+    // make_field(`aA.scss`, `${variable_name}.scss`, `file`),
 
-    make_field(`.vue`, `${variable_name}.vue`, `file`),
+    make_field(`.vue`, `${class_identifier}.vue`, `file`),
     /// logics
     make_field(`handle_`, `handle${class_identifier}`, `logics`),
     make_field(`entrance_`, `entrance${class_identifier}`, `logics`),
