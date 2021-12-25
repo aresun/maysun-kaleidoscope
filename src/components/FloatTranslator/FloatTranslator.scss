@@ -1,0 +1,29 @@
+.float-translator {
+  height: 100vh;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+
+  border-left: 6px solid #afafaf;
+
+  transition: 200ms all ease;
+
+  width: 0px;
+
+  &.active {
+    width: 500px;
+  }
+
+  .show-button {
+    width: 72px;
+
+    cursor: pointer;
+
+    font-size: 25px;
+
+    position: absolute;
+    left: -44px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

@@ -8,6 +8,7 @@ import "./IndexPage.scss";
 // # components
 import Kaleidoscope from "components/Kaleidoscope/Kaleidoscope";
 import InputArea from "components/InputArea/InputArea";
+import FloatTranslator from "components/FloatTranslator/FloatTranslator";
 
 function IndexPage() {
   const [str_splited_by_blank, set_str_splited_by_blank] = useState(``);
@@ -61,20 +62,24 @@ function IndexPage() {
   }
 
   return (
-    <div className="container">
-      <InputArea
-        external_for_changed={process_changed}
-        external_for_cleared={process_clear}
-        external_for_blured={process_blured}
-        str_splited_by_blank={str_splited_by_blank}
-      />
+    <>
+      <div className="container">
+        <InputArea
+          external_for_changed={process_changed}
+          external_for_cleared={process_clear}
+          external_for_blured={process_blured}
+          str_splited_by_blank={str_splited_by_blank}
+        />
 
-      <Kaleidoscope
-        fields_showed={fields_showed}
-        when_clicked_radio={when_clicked_radio}
-        default_type={default_type}
-      />
-    </div>
+        <Kaleidoscope
+          fields_showed={fields_showed}
+          when_clicked_radio={when_clicked_radio}
+          default_type={default_type}
+        />
+      </div>
+
+      <FloatTranslator />
+    </>
   );
 }
 

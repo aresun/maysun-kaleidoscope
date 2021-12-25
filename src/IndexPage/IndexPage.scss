@@ -10,3 +10,12 @@
 
   min-width: 1024px;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: #000;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: gold;
+}
