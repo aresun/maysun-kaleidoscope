@@ -9,16 +9,20 @@ export default function FloatTranslator({ prop_name }) {
   }
 
   return (
-    <div className={is_show ? `float-translator active` : `float-translator`}>
-      <span className="show-button" onClick={handle_clicked_show}>
-        🎁
-      </span>
-      <iframe
-        src="https://cn.bing.com/translator/"
-        width="500"
-        height="1000"
-        frameBorder="0"
-      ></iframe>
-    </div>
+    <>
+      <div className={is_show ? `mask` : ``}>
+        <div className={is_show ? `float-translator active` : `float-translator`}>
+          <span className="show-button" onClick={handle_clicked_show}>
+            🎁
+          </span>
+          <iframe
+            src="https://cn.bing.com/translator/"
+            width="500"
+            height="1000"
+            frameBorder="0"
+          ></iframe>
+        </div>
+      </div>
+    </>
   );
 }
