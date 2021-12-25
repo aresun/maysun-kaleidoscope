@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/maysun-kaleidoscope/static/css/main.29e0e17a.css",
+    "main.css": "/maysun-kaleidoscope/static/css/main.591ddef6.css",
     "main.js": "/maysun-kaleidoscope/static/js/main.a0514dd1.js",
     "static/js/787.6a3b9dbe.chunk.js": "/maysun-kaleidoscope/static/js/787.6a3b9dbe.chunk.js",
     "index.html": "/maysun-kaleidoscope/index.html",
-    "main.29e0e17a.css.map": "/maysun-kaleidoscope/static/css/main.29e0e17a.css.map",
+    "main.591ddef6.css.map": "/maysun-kaleidoscope/static/css/main.591ddef6.css.map",
     "main.a0514dd1.js.map": "/maysun-kaleidoscope/static/js/main.a0514dd1.js.map",
     "787.6a3b9dbe.chunk.js.map": "/maysun-kaleidoscope/static/js/787.6a3b9dbe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29e0e17a.css",
+    "static/css/main.591ddef6.css",
     "static/js/main.a0514dd1.js"
   ]
 }
