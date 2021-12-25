@@ -1,0 +1,26 @@
+.copy-button {
+  border: 1px solid purple;
+  border-radius: 6px;
+  color: #ff0066;
+
+  cursor: pointer;
+
+  padding: 6px 0px;
+  margin-left: 135px;
+
+  width: 125px;
+  font-size: 24px;
+
+  transition: 200ms all ease;
+
+  vertical-align: middle;
+
+  &:hover {
+    background-color: purple;
+  }
+
+  & span {
+    position: relative;
+    top: 3px;
+  }
+}

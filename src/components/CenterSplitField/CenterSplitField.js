@@ -1,6 +1,6 @@
 import { copy } from "../../utils/copy";
 // # css
-import "./style.scss";
+import "./CenterSplitField.scss";
 
 export default function CenterSplitField({
   label_name,

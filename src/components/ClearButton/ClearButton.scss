@@ -1,0 +1,16 @@
+@import "css/_variables.scss";
+
+
+.clear-btn {
+  cursor: pointer;
+
+  width: $clear-button-size;
+  height: $clear-button-size;
+  border-radius: 50%;
+  background-color: #ff0066;
+  right: $clear-button-size-right;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
